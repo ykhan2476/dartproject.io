@@ -1,0 +1,74 @@
+#include <stdio.h>
+
+int main() {
+    int num,mod;
+    int i=0;
+    int arr[5];
+    printf("enter the number");
+    scanf("%d", &num);
+    while(num!=0){
+        mod = num%10;
+        arr[i]=mod;
+        
+        num=num/10;
+         printf("%d", arr[i],",");
+      
+    }
+    return 0;
+}
+
+#include <stdio.h>
+int main() {
+    int num,mod;
+    int i,j;
+    int arr[10];
+    printf("enter the number");
+    scanf("%d", &num);
+    for(i=5,j=0;i>=0;i--,j++){
+        mod = num%10;
+        arr[i]=mod;
+        num=num/10;
+          printf("\n%d",arr[j]);
+    }
+    return 0;
+}
+
+
+
+#include <stdio.h>
+int main() {
+    int num,mod,i,j,count,arr[10],arr2[10],n;
+   
+    printf("enter the number");
+    scanf("%d", &num);
+    
+    n=num;
+    
+    count=0;
+    while(num!= 0){
+       num=num/10;
+       count+=1;
+    }
+    printf("size of number is %d",count);
+    
+    
+    for(i=0;i<count;i++){
+        mod = n%10;
+        arr[i]=mod;
+        n=n/10;
+        printf("\n%d",arr[i]);
+    }
+      
+    
+        
+    
+  
+    return 0;
+}
+/* for(i=5,j=0;i>=0;i--,j++){
+        mod = num%10;
+        if (mod%2==0){
+        arr[i]=mod;}
+        num=num/10;
+          printf("\n%d",arr[j]);
+    }*/
